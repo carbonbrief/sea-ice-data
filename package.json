@@ -4,7 +4,9 @@
   "description": "from APL/PSC PIOMAS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "getsheets":"node get-sea-ice-sheets.mjs"
+
   },
   "author": "",
   "license": "ISC",
