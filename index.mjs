@@ -26,7 +26,7 @@ data.forEach(row=>{
   })
 });
 
-writeFileSync(`processed/piomas-monthly-${isoDate}.csv`,csvFormat(monthlyVolumeData));
+writeFileSync(`processed/piomas-monthly.csv`,csvFormat(monthlyVolumeData));
 // fetch the sea ice extent data
 
 async function getFTPData(){
@@ -42,24 +42,30 @@ async function getFTPData(){
     console.log(err);
   }
   ftpClient.close();
+  processSeaIceExtent();
+}
+
+function processSeaIceExtent(){
+  // process sea ice extent data
+  ['north','south'].forEach((pole)=>{
+    const extentFiles = readdirSync(`source/extent-${pole}`);
+    const monthlyExtentData = []
+    extentFiles.forEach((f)=>{
+      const extentData = csvParse(readFileSync(`source/extent-${pole}/${f}`,'utf-8'));
+      extentData.forEach(row => {
+        monthlyExtentData.push({
+          date:`${row.year.trim()}-${row[' mo'].trim()}`,
+          extent:row[' extent'].trim(),
+          area:row['   area'].trim(),
+          'data-type':row['    data-type'].trim(),
+          region:row[' region'].trim()
+        });
+      })
+    });
+  
+    writeFileSync(`processed/${pole}-extent-v3.csv`, csvFormat(monthlyExtentData));
+  });
 }
 
 getFTPData();
 
-// process sea ice extent data
-const extentFiles = readdirSync('source/extent-north');
-const monthlyExtentData = []
-extentFiles.forEach((f)=>{
-  const extentData = csvParse(readFileSync(`source/extent-north/${f}`,'utf-8'));
-  extentData.forEach(row => {
-    monthlyExtentData.push({
-      date:`${row.year.trim()}-${row[' mo'].trim()}`,
-      extent:row[' extent'].trim(),
-      area:row['   area'].trim(),
-      'data-type':row['    data-type'].trim(),
-      region:row[' region'].trim()
-    });
-  })
-});
-
-writeFileSync(`processed/extent-v3-${isoDate}.csv`, csvFormat(monthlyExtentData));
