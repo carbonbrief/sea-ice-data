@@ -13,7 +13,6 @@
   "dependencies": {
     "basic-ftp": "^5.0.2",
     "d3-dsv": "^3.0.1",
-    "ftp": "^0.3.10",
     "node-fetch": "^3.2.10"
   }
 }

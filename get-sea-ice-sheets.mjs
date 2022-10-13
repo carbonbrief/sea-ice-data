@@ -6,7 +6,7 @@ import fetch from 'node-fetch';
 /* fetch and process the monthly sea ice volume data */
 
 const volumeSourceURL = "http://psc.apl.uw.edu/wordpress/wp-content/uploads/schweiger/ice_volume/PIOMAS.monthly.Current.v2.1.csv"
-const volumeSourceFile = "source/volume/PIOMAS.monthly.Current.v2.1.csv"
+const volumeSourceFile = "source/volume-north/PIOMAS.monthly.Current.v2.1.csv"
 const now = new Date();
 const isoDate = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}`;
 
@@ -26,7 +26,7 @@ data.forEach(row=>{
   })
 });
 
-writeFileSync(`processed/piomas-monthly.csv`,csvFormat(monthlyVolumeData));
+writeFileSync(`processed/north-volume.csv`,csvFormat(monthlyVolumeData));
 // fetch the sea ice extent data
 
 async function getFTPData(){
@@ -63,7 +63,7 @@ function processSeaIceExtent(){
       })
     });
   
-    writeFileSync(`processed/${pole}-extent-v3.csv`, csvFormat(monthlyExtentData));
+    writeFileSync(`processed/${pole}-extent.csv`, csvFormat(monthlyExtentData));
   });
 }
 
