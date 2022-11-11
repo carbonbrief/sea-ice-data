@@ -6,7 +6,7 @@ APL/PSC PIOMAS, regularly updated [Arctic sea ice volume CSV](source/volume-nort
  
 transformed into a [simple time series data CSV](processed/north-volume.csv).
 
-The repo also includes arctic sea ice extent data from 
+The repo also includes arctic sea ice extent data from [NSIDC Sea Ice index](https://nsidc.org/data/seaice_index) 
  * ftp://sidads.colorado.edu/DATASETS/NOAA/G02135
  
  ---
