@@ -8,3 +8,11 @@ transformed into a [simple time series data CSV](processed/north-volume.csv).
 
 The repo also includes arctic sea ice extent data from 
  * ftp://sidads.colorado.edu/DATASETS/NOAA/G02135
+ 
+ ---
+ 
+Volume time series and uncertainties:
+Schweiger, A., R. Lindsay, J. Zhang, M. Steele, H. Stern, Uncertainty in modeled arctic sea ice volume, J. Geophys. Res., doi:10.1029/2011JC007084, 2011
+
+Model details:
+Zhang, J.L. and D.A. Rothrock, “Modeling global sea ice with a thickness and enthalpy distribution model in generalized curvilinear coordinates“, Mon. Weather Rev., 131, 845-861, 2003
