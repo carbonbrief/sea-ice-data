@@ -27,8 +27,8 @@ data.forEach(row=>{
 });
 
 writeFileSync(`processed/north-volume.csv`,csvFormat(monthlyVolumeData));
-// fetch the sea ice extent data
 
+// fetch the sea ice extent data
 async function getFTPData(){
   const ftpClient = new ftp.Client();
   try{
@@ -36,8 +36,10 @@ async function getFTPData(){
       secure: false,
       host: "sidads.colorado.edu"});
 
-    await ftpClient.downloadToDir('source/extent-north', "DATASETS/NOAA/G02135/north/monthly/data");
-    await ftpClient.downloadToDir('source/extent-south', "DATASETS/NOAA/G02135/south/monthly/data");
+    await ftpClient.downloadToDir('source/extent-north/monthly', "DATASETS/NOAA/G02135/north/monthly/data");
+    await ftpClient.downloadToDir('source/extent-south/monthly', "DATASETS/NOAA/G02135/south/monthly/data");
+    await ftpClient.downloadToDir('source/extent-north/daily', "DATASETS/NOAA/G02135/north/daily/data");
+    await ftpClient.downloadToDir('source/extent-south/daily', "DATASETS/NOAA/G02135/south/daily/data");
   }catch(err){
     console.log(err);
   }
