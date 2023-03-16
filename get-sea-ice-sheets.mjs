@@ -38,6 +38,8 @@ async function getFTPData(){
 
     await ftpClient.downloadToDir('source/extent-north/monthly', "DATASETS/NOAA/G02135/north/monthly/data");
     await ftpClient.downloadToDir('source/extent-south/monthly', "DATASETS/NOAA/G02135/south/monthly/data");
+    await ftpClient.downloadToDir('source/extent-north/monthly-shape', "DATASETS/NOAA/G02135/north/monthly/shapefiles");
+    await ftpClient.downloadToDir('source/extent-south/monthly-shape', "DATASETS/NOAA/G02135/south/monthly/shapefiles");
     await ftpClient.downloadToDir('source/extent-north/daily', "DATASETS/NOAA/G02135/north/daily/data");
     await ftpClient.downloadToDir('source/extent-south/daily', "DATASETS/NOAA/G02135/south/daily/data");
   }catch(err){
