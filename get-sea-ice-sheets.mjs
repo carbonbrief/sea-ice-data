@@ -50,10 +50,10 @@ async function getFTPData(){
 function processSeaIceExtent(){
   // process sea ice extent data
   ['north','south'].forEach((pole)=>{
-    const extentFiles = readdirSync(`source/extent-${pole}`);
+    const extentFiles = readdirSync(`source/extent-${pole}/monthly`);
     const monthlyExtentData = []
     extentFiles.forEach((f)=>{
-      const extentData = csvParse(readFileSync(`source/extent-${pole}/${f}`,'utf-8'));
+      const extentData = csvParse(readFileSync(`source/extent-${pole}/monthly/${f}`,'utf-8'));
       extentData.forEach(row => {
         monthlyExtentData.push({
           date:`${row.year.trim()}-${row[' mo'].trim()}`,
