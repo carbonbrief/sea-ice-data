@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "getsheets":"node get-sea-ice-sheets.mjs"
-
+    "getsheets": "node get-sea-ice-sheets.mjs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adm-zip": "^0.5.10",
     "basic-ftp": "^5.0.2",
     "d3-dsv": "^3.0.1",
-    "node-fetch": "^3.2.10"
+    "mapshaper": "^0.6.25",
+    "node-fetch": "^3.2.10",
+    "shapefile": "^0.6.6",
+    "topojson": "^3.0.2"
   }
 }

@@ -6,9 +6,11 @@ APL/PSC PIOMAS, regularly updated [Arctic sea ice volume CSV](source/volume-nort
  
 transformed into a [simple time series data CSV](processed/north-volume.csv).
 
-The repo also includes daily and monthly arctic and antarctic sea ice extent data from [NSIDC Sea Ice index](https://nsidc.org/data/seaice_index) 
+The repo also includes daily and monthly arctic and antarctic sea ice extent data from [NSIDC Sea Ice index](https://nsidc.org/data/seaice_index) both timeseries data and shapefiles
  * ftp://sidads.colorado.edu/DATASETS/NOAA/G02135
  
+TODO: I converted the shapefiles to geojson in QGIS, I'd liek to automate this in the data getting process
+
  ---
  
 Volume time series and uncertainties:
