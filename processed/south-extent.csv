@@ -42,7 +42,7 @@ date,extent,area,data-type,region
 2019-1,3.87,2.66,Goddard,S
 2020-1,4.60,3.09,Goddard,S
 2021-1,4.78,2.94,Goddard,S
-2022-1,3.86,2.38,NRTSI-G,S
+2022-1,3.94,2.44,Goddard,S
 2023-1,3.23,1.95,NRTSI-G,S
 1979-2,3.14,2.11,Goddard,S
 1980-2,2.82,1.85,Goddard,S
@@ -87,7 +87,7 @@ date,extent,area,data-type,region
 2019-2,2.65,1.81,Goddard,S
 2020-2,2.92,1.83,Goddard,S
 2021-2,2.89,1.72,Goddard,S
-2022-2,2.16,1.35,NRTSI-G,S
+2022-2,2.21,1.38,Goddard,S
 2023-2,1.91,1.15,NRTSI-G,S
 1979-3,4.00,2.66,Goddard,S
 1980-3,3.29,2.11,Goddard,S
@@ -132,7 +132,8 @@ date,extent,area,data-type,region
 2019-3,3.17,2.10,Goddard,S
 2020-3,4.00,2.59,Goddard,S
 2021-3,4.48,2.82,Goddard,S
-2022-3,2.82,1.83,NRTSI-G,S
+2022-3,2.86,1.86,Goddard,S
+2023-3,2.80,1.75,NRTSI-G,S
 1979-4,7.49,5.45,Goddard,S
 1980-4,5.40,3.68,Goddard,S
 1981-4,5.84,4.07,Goddard,S
@@ -176,7 +177,8 @@ date,extent,area,data-type,region
 2019-4,5.72,4.18,Goddard,S
 2020-4,6.66,4.81,Goddard,S
 2021-4,7.13,5.29,Goddard,S
-2022-4,5.89,4.21,NRTSI-G,S
+2022-4,5.95,4.25,Goddard,S
+2023-4,5.49,3.96,NRTSI-G,S
 1979-5,10.83,8.30,Goddard,S
 1980-5,8.86,6.44,Goddard,S
 1981-5,9.35,7.08,Goddard,S
@@ -220,7 +222,8 @@ date,extent,area,data-type,region
 2019-5,8.85,6.84,Goddard,S
 2020-5,9.87,7.61,Goddard,S
 2021-5,10.40,8.21,Goddard,S
-2022-5,9.32,7.23,NRTSI-G,S
+2022-5,9.42,7.29,Goddard,S
+2023-5,8.36,6.45,NRTSI-G,S
 1979-6,14.19,11.22,Goddard,S
 1980-6,12.49,9.58,Goddard,S
 1981-6,13.11,10.16,Goddard,S
@@ -264,7 +267,8 @@ date,extent,area,data-type,region
 2019-6,12.25,9.75,Goddard,S
 2020-6,13.27,10.59,Goddard,S
 2021-6,13.54,11.05,Goddard,S
-2022-6,12.13,9.49,NRTSI-G,S
+2022-6,12.22,9.56,Goddard,S
+2023-6,11.02,8.49,NRTSI-G,S
 1979-7,16.52,13.26,Goddard,S
 1980-7,15.56,12.18,Goddard,S
 1981-7,16.04,12.78,Goddard,S
@@ -308,7 +312,8 @@ date,extent,area,data-type,region
 2019-7,15.30,12.33,Goddard,S
 2020-7,15.72,12.58,Goddard,S
 2021-7,16.45,13.36,Goddard,S
-2022-7,14.90,11.87,NRTSI-G,S
+2022-7,14.99,11.91,Goddard,S
+2023-7,13.49,10.59,NRTSI-G,S
 1979-8,17.70,13.79,Goddard,S
 1980-8,17.81,13.96,Goddard,S
 1981-8,17.74,14.16,Goddard,S
@@ -352,7 +357,8 @@ date,extent,area,data-type,region
 2019-8,17.48,13.99,Goddard,S
 2020-8,17.76,14.42,Goddard,S
 2021-8,18.19,14.63,Goddard,S
-2022-8,16.97,13.66,NRTSI-G,S
+2022-8,17.05,13.67,Goddard,S
+2023-8,15.50,12.21,NRTSI-G,S
 1979-9,18.20,14.29,Goddard,S
 1980-9,18.82,14.87,Goddard,S
 1981-9,18.60,14.78,Goddard,S
@@ -396,7 +402,7 @@ date,extent,area,data-type,region
 2019-9,18.33,14.60,Goddard,S
 2020-9,18.84,15.09,Goddard,S
 2021-9,18.51,14.42,Goddard,S
-2022-9,18.01,14.05,NRTSI-G,S
+2022-9,18.06,14.07,Goddard,S
 1979-10,17.82,13.72,Goddard,S
 1980-10,18.57,14.57,Goddard,S
 1981-10,18.29,14.43,Goddard,S
@@ -440,7 +446,7 @@ date,extent,area,data-type,region
 2019-10,17.94,13.90,Goddard,S
 2020-10,18.49,14.60,Goddard,S
 2021-10,17.69,13.39,Goddard,S
-2022-10,17.41,13.25,NRTSI-G,S
+2022-10,17.47,13.34,Goddard,S
 1978-11,15.90,11.69,Goddard,S
 1979-11,15.34,11.32,Goddard,S
 1980-11,16.13,11.84,Goddard,S
@@ -485,7 +491,7 @@ date,extent,area,data-type,region
 2019-11,14.99,11.19,Goddard,S
 2020-11,16.23,11.88,Goddard,S
 2021-11,15.04,10.45,Goddard,S
-2022-11,15.06,10.71,NRTSI-G,S
+2022-11,15.16,10.84,Goddard,S
 1978-12,10.40,6.97,Goddard,S
 1979-12,9.24,6.24,Goddard,S
 1980-12,10.16,6.56,Goddard,S
@@ -530,4 +536,4 @@ date,extent,area,data-type,region
 2019-12,9.41,6.59,Goddard,S
 2020-12,10.57,6.61,Goddard,S
 2021-12,9.24,5.48,Goddard,S
-2022-12,8.69,5.12,NRTSI-G,S
+2022-12,8.84,5.23,Goddard,S
